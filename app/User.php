@@ -39,4 +39,9 @@ class User extends Authenticatable
 
 
     /* TODO Relation pour récupérer les contacts d'un utilisateur */
+
+    // Relation One to many
+    public function contacts() {
+        return $this->hasMany('App\Contact'); }
 }
+
